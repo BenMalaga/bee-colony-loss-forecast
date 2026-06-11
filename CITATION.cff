@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this dataset or benchmark, please cite it as below."
+title: "Does bee-colony monitoring forecast loss, or only explain it? A pre-registered out-of-sample benchmark on USDA NASS data"
+authors:
+  - family-names: Malaga
+    given-names: Ben
+type: dataset
+license: CC0-1.0
+repository-code: "https://github.com/BenMalaga/bee-colony-loss-forecast"
+abstract: >-
+  A pre-registered out-of-sample forecasting benchmark for U.S. honey-bee colony loss built on
+  public USDA NASS Honey Bee Colonies data. Finds that reported stressor prevalence (Varroa,
+  disease, pesticides) adds no statistically detectable marginal forecasting value over a model
+  of past loss; the only skill present is recalibration of a seasonal-naive baseline. Releases a
+  cleaned state x quarter panel (2015-2025) and a frozen forecasting benchmark.
+keywords:
+  - honey bees
+  - colony loss
+  - forecasting
+  - benchmark
+  - pre-registration
+  - out-of-sample
+  - USDA NASS
+doi: 10.5281/zenodo.20646104
+version: 1.0.1
+date-released: 2026-06-11

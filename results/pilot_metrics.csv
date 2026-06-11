@@ -1,0 +1,5 @@
+method,MAE,MASE_vs_snaive
+seasonal_naive (loss t-4),4.891,1.0
+persistence   (loss t-1),6.014,1.23
+"lagged_model  (HGB t-1,t-4)",4.526,0.925
+"concurrent_model (HGB, same-qtr stressors)",4.318,0.883

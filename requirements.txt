@@ -1,0 +1,11 @@
+# Pinned for reproducibility. Target: Python 3.13. Laptop / CPU only (fits M2 8GB).
+# Lean set: ingest uses the stdlib (urllib), panel uses CSV (no pyarrow), gradient boosting
+# uses scikit-learn's HistGradientBoosting (no xgboost / no libomp). ~300 MB installed.
+pandas==2.2.3
+numpy==2.1.3
+scikit-learn==1.5.2
+statsmodels==0.14.4
+matplotlib==3.9.2
+tqdm==4.67.1
+python-dotenv==1.0.1
+pytest==8.3.4

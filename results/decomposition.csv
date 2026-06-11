@@ -1,0 +1,2 @@
+comparison,delta_MAE,ci_lo,ci_hi
+MAE(loss_only) - MAE(lagged_full)  [>0 => stressors help],-0.15,-0.464,0.128

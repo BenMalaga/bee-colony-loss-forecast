@@ -1,0 +1,28 @@
+# Raw + intermediate data are fetched, never committed (master brief §5).
+data/raw/
+data/processed/
+data/interim/
+*.parquet
+*.csv
+!results/*.csv             # released/derived outputs in results/ ARE committed
+!results/**/*.csv
+
+# Secrets
+.env
+*.key
+
+# Models / large artifacts
+models/
+*.joblib
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store

@@ -1,0 +1,5 @@
+target,model,MASE_loss_only,MASE_full,MASE_lean,delta_MAE(>0=stressors help),state_CI,period_CI,"MDE_MASE(2.8se,state=PRIMARY)","MDE_MASE(2.8se,period)"
+published(int),HGB,0.903,0.934,0.921,-0.15,"[-0.470,0.162]","[-0.311,0.050]",0.089,0.056
+published(int),LassoCV,0.943,0.937,0.934,0.029,"[-0.024,0.092]","[-0.063,0.101]",0.017,0.025
+constructed(cont),HGB,0.899,0.912,0.926,-0.064,"[-0.339,0.167]","[-0.258,0.144]",0.072,0.06
+constructed(cont),LassoCV,0.934,0.929,0.925,0.024,"[-0.033,0.089]","[-0.067,0.096]",0.018,0.023

@@ -1,0 +1,38 @@
+=== PRIMARY SPLIT (train<=2022, test 2023-2025; n_test=349, 45 states) ===
+           method   MAE  MASE  MASE_lo  MASE_hi
+           snaive 4.891 1.000    1.000    1.000
+          persist 6.014 1.230    1.120    1.351
+             clim 4.903 1.003    0.901    1.129
+     recal_snaive 4.537 0.928    0.856    1.019
+    hgb_lag4_only 4.440 0.908    0.839    0.992
+    hgb_loss_only 4.416 0.903    0.831    0.986
+  hgb_lagged_full 4.566 0.934    0.843    1.038
+   hgb_concurrent 4.318 0.883    0.796    0.974
+ridge_lagged_full 4.624 0.945    0.875    1.033
+
+[log] excluded 2 test rows lacking seasonal-naive (t-4); their target mean=1.50 vs kept 9.05 (low-loss tail; all methods scored on the identical filtered set).
+
+=== H1 (lagged stressor model vs seasonal-naive) ===
+  hgb_lagged_full MASE=0.934 95%CI[0.843,1.038] -> INCONCLUSIVE
+  NOTE source-of-skill controls: clim MASE=1.003, recal_snaive=0.928, hgb_lag4_only=0.908, hgb_loss_only=0.903
+  => sub-1 skill is recalibration/mean-reversion of seasonal-naive, not recent-loss info.
+
+=== HEADLINE: do stressors add value beyond lagged loss? ===
+  MAE(loss_only)-MAE(loss+stressors) = -0.150 95%CI[-0.464,0.128] -> NO detectable value (CI includes 0)
+  (sign is model-dependent; see robustness.py LassoCV + continuous-target + power/MDE.)
+
+=== H2 (concurrent vs lagged stressors) ===
+  vs BEST lagged model (pre-registered): gap=2.2%  (reported-vs-lagged_full was 5.4%)  bar=20% -> NOT supported
+  state-block 95%CI on the gap = [-4.6%, 8.5%] -> includes 0: concurrent stressors do NOT reliably beat the best lagged model (stronger than the 20%-bar framing; the field signal is neither leading nor reliably coincident)
+
+=== Rolling-origin MASE ===
+ test_year   n  MASE_loss_only  MASE_lagged_full  MASE_concurrent
+      2020 136           0.941             0.983            0.804
+      2021 181           0.883             0.840            0.791
+      2022 178           0.939             0.947            0.843
+      2023 176           0.902             0.932            0.902
+      2024 131           0.881             0.899            0.822
+      2025  42           0.913             0.821            1.015
+
+=== Per-state (lagged_full): beat naive 58% of states; +stressors beats loss-only 53% (coin-flip => no signal) ===
+=== COVID: lagged_full MASE 0.934 (full) vs 0.916 (excl 2020-2021) ===

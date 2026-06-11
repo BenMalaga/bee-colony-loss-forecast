@@ -1,0 +1,14 @@
+column,n,n_missing,pct_missing
+str_disease,1776,209,11.8
+str_pesticides,1776,143,8.1
+str_unknown,1776,134,7.5
+renovated_pct,1776,118,6.6
+str_pests_excl_varroa,1776,84,4.7
+str_other,1776,74,4.2
+renovated,1776,26,1.5
+loss_pct,1776,10,0.6
+str_varroa,1776,3,0.2
+added_replaced,1776,0,0.0
+inv_max,1776,0,0.0
+loss_colonies,1776,0,0.0
+loss_pct_constructed,1776,0,0.0

@@ -1,0 +1,10 @@
+method,MAE,MASE,MASE_lo,MASE_hi
+snaive,4.891,1.0,1.0,1.0
+persist,6.014,1.23,1.12,1.351
+clim,4.903,1.003,0.901,1.129
+recal_snaive,4.537,0.928,0.856,1.019
+hgb_lag4_only,4.44,0.908,0.839,0.992
+hgb_loss_only,4.416,0.903,0.831,0.986
+hgb_lagged_full,4.566,0.934,0.843,1.038
+hgb_concurrent,4.318,0.883,0.796,0.974
+ridge_lagged_full,4.624,0.945,0.875,1.033
