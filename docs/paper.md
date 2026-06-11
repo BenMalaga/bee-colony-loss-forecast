@@ -92,5 +92,3 @@ The repository contains the code, the locked pre-registration with its deviation
 - Shmueli, G. (2010). To explain or to predict? *Statistical Science*, 25(3), 289–310. doi:10.1214/10-STS330. https://projecteuclid.org/journals/statistical-science/volume-25/issue-3/To-Explain-or-to-Predict/10.1214/10-STS330.full
 
 *Figures: `results/figures/fig1_source_of_skill.png`, `fig2_decomposition.png`, `fig3_rolling_origin.png`.*
-
-*Note on references: the Gray et al. (2024), Shmueli (2010), and 2024–2025 US Beekeeping Survey entries were verified against the source of record. The full author lists for Calovi et al. (2021), Insolia et al. (2022), and the 2021* Sensors *paper are abbreviated to the verified lead author (or omitted where unverified) and should be completed from the primary sources, linked above, before arXiv submission.*

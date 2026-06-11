@@ -56,8 +56,8 @@ python -m src.figures                              # regenerate figures
 ```
 
 See [`PRE_REGISTRATION.md`](PRE_REGISTRATION.md) for the locked analysis plan,
-[`data/README.md`](data/README.md) for fetch details, [`docs/paper.md`](docs/paper.md) for the
-writeup, and [`docs/related_work.md`](docs/related_work.md) for the prior art.
+[`data/README.md`](data/README.md) for fetch details, and [`docs/paper.md`](docs/paper.md) for the
+writeup and references.
 
 ## Status
 Result verified and reproducible. The derived dataset is archived at Zenodo

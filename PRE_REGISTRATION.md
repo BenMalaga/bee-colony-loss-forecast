@@ -128,7 +128,7 @@ conclusions.
   **Gray, Goslee, Kammerer & Grozinger 2024, *Journal of Insect Science* 24(3):15,
   doi:10.1093/jisesa/ieae043**. The substantive claim (this group used k-fold CV and declined
   temporal/train-past-test-future validation) is unchanged and correctly quoted. The wrong
-  attribution is corrected in docs/related_work.md and docs/paper.md; the locked §7
+  attribution is corrected in docs/paper.md; the locked §7
   line is left intact per the no-silent-edit rule and superseded by this entry.
 
 ### Verified conclusion (M3 + audit)
