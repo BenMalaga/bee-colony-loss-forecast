@@ -1,6 +1,6 @@
 # bee-colony-loss-forecast
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20646104.svg)](https://doi.org/10.5281/zenodo.20646104)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20649336.svg)](https://doi.org/10.5281/zenodo.20649336)
 &nbsp;[![License: CC0-1.0](https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 &nbsp;[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 
@@ -39,7 +39,7 @@ measure*, **not** whether stressors *cause* colony loss.
 > high annual U.S. colony-**loss / turnover** — which is what this targets, honestly.
 
 ## Artifacts
-- **Released dataset:** [`results/bee_colony_panel.csv`](results/bee_colony_panel.csv) (state×quarter, 2015–2025) + [data dictionary](results/DATA_DICTIONARY.md). CC0; NASS is public domain. Archived at Zenodo: [doi:10.5281/zenodo.20646104](https://doi.org/10.5281/zenodo.20646104).
+- **Released dataset:** [`results/bee_colony_panel.csv`](results/bee_colony_panel.csv) (state×quarter, 2015–2025) + [data dictionary](results/DATA_DICTIONARY.md). CC0; NASS is public domain. Archived at Zenodo: [doi:10.5281/zenodo.20649336](https://doi.org/10.5281/zenodo.20649336).
 - **Benchmark + leaderboard:** [`results/LEADERBOARD.md`](results/LEADERBOARD.md) — frozen splits, baseline floor, submission rules.
 - **Paper draft:** [`docs/paper.md`](docs/paper.md). Pre-registration: [`PRE_REGISTRATION.md`](PRE_REGISTRATION.md) (with logged deviations).
 - **Figures:** [`results/figures/`](results/figures).
@@ -61,4 +61,4 @@ writeup, and [`docs/related_work.md`](docs/related_work.md) for the prior art.
 
 ## Status
 Result verified and reproducible. The derived dataset is archived at Zenodo
-([doi:10.5281/zenodo.20646104](https://doi.org/10.5281/zenodo.20646104)).
+([doi:10.5281/zenodo.20649336](https://doi.org/10.5281/zenodo.20649336)).
