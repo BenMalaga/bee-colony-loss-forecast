@@ -17,7 +17,7 @@
 - The ingest is standard-library only (urllib), with no third-party deps, so it runs before you've
   installed the analysis venv.
 - What it pulls: `commodity_desc=HONEY`, `agg_level_desc=STATE`, `source_desc=SURVEY`, all years
-  2015–2025, filtered to `short_desc` containing "BEE COLONIES" (inventory, lost, added,
+  2015-2025, filtered to `short_desc` containing "BEE COLONIES" (inventory, lost, added,
   renovated, and "colonies affected by" each stressor: Varroa, other pests/parasites incl.
   *Nosema*, disease, pesticides, other, unknown).
 - Discovery: the fetch writes `data/raw/bee_colony_short_descs.txt` first, listing the exact
@@ -30,12 +30,12 @@
 - License: U.S. Government work, public domain. Safe to redistribute the derived panel.
 - Quirks the pipeline handles (see `../PRE_REGISTRATION.md`): suppressed cells `(D)/(Z)`, small-state
   noise, the fact that stressor% and loss% are co-measured in the same survey, and the COVID-era
-  2020–21 quarters.
+  2020-21 quarters.
 
 ## 2. Insolia et al. 2022, released combined dataset (reproducibility anchor + H3 covariates)
 
 - Code plus `bee_data.csv` (NASS + PRISM weather + USDA Cropland Data Layer, 44 states, quarterly
-  2015–2021): <https://github.com/LucaIns/honey_bee_loss_US_scirep>
+  2015-2021): <https://github.com/LucaIns/honey_bee_loss_US_scirep>
   ```bash
   git clone https://github.com/LucaIns/honey_bee_loss_US_scirep data/raw/insolia_2022
   ```

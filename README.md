@@ -27,7 +27,7 @@ survive an honest out-of-sample test.
 
 ![source of skill](results/figures/fig1_source_of_skill.png)
 
-| model (test 2023–25, n=349) | MASE vs seasonal-naive | 95% CI |
+| model (test 2023-25, n=349) | MASE vs seasonal-naive | 95% CI |
 |---|---|---|
 | loss-only (HGB) | **0.903** | [0.83, 0.99] |
 | loss **+ all stressors** | 0.934 | [0.84, 1.04] |
@@ -44,7 +44,7 @@ stressors *cause* colony loss. Those are different questions and this design onl
 > colony loss and turnover, and that is what this targets.
 
 ## Artifacts
-- **Released dataset:** [`results/bee_colony_panel.csv`](results/bee_colony_panel.csv) (state×quarter, 2015–2025) plus a [data dictionary](results/DATA_DICTIONARY.md). CC0, since NASS is public domain. Archived at Zenodo: [doi:10.5281/zenodo.20649336](https://doi.org/10.5281/zenodo.20649336).
+- **Released dataset:** [`results/bee_colony_panel.csv`](results/bee_colony_panel.csv) (state×quarter, 2015-2025) plus a [data dictionary](results/DATA_DICTIONARY.md). CC0, since NASS is public domain. Archived at Zenodo: [doi:10.5281/zenodo.20649336](https://doi.org/10.5281/zenodo.20649336).
 - **Benchmark + leaderboard:** [`results/LEADERBOARD.md`](results/LEADERBOARD.md), with the frozen splits, the baseline floor, and submission rules.
 - **Paper draft:** [`docs/paper.md`](docs/paper.md). Pre-registration: [`PRE_REGISTRATION.md`](PRE_REGISTRATION.md), with the deviations logged.
 - **Figures:** [`results/figures/`](results/figures).
@@ -53,7 +53,7 @@ stressors *cause* colony loss. Those are different questions and this design onl
 ```bash
 pip install -r requirements.txt
 export QUICKSTATS_API_KEY=...           # free: https://quickstats.nass.usda.gov/api
-python -m src.fetch_nass --confirm-prereg-locked   # pull 2015–2025 NASS data
+python -m src.fetch_nass --confirm-prereg-locked   # pull 2015-2025 NASS data
 python -m src.build_panel                          # build the state×quarter panel
 python -m src.analyze                              # primary results + bootstrap CIs
 python -m src.robustness                           # continuous target, LassoCV, power/MDE

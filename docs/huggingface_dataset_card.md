@@ -2,7 +2,7 @@
 license: cc0-1.0
 language:
   - en
-pretty_name: U.S. Honey-Bee Colony Loss & Stressor Panel (2015–2025)
+pretty_name: U.S. Honey-Bee Colony Loss & Stressor Panel (2015-2025)
 tags:
   - honey-bees
   - colony-loss
@@ -13,13 +13,13 @@ size_categories:
   - 1K<n<10K
 ---
 
-# U.S. Honey-Bee Colony Loss & Stressor Panel (2015–2025)
+# U.S. Honey-Bee Colony Loss & Stressor Panel (2015-2025)
 
 A reproducible state × quarter panel from the USDA NASS *Honey Bee Colonies* survey (Quick Stats
 2.0 API; public domain), built for a pre-registered out-of-sample forecasting benchmark.
 
-- **Rows:** 1,776 (unit × year × quarter); **reporting units:** 46 (45 states + a NASS "Other States" aggregate, coded OT); **period:** 2015–2025 (quarters
-  JAN–MAR=1 … OCT–DEC=4).
+- **Rows:** 1,776 (unit × year × quarter); **reporting units:** 46 (45 states + a NASS "Other States" aggregate, coded OT); **period:** 2015-2025 (quarters
+  JAN-MAR=1 ... OCT-DEC=4).
 - **Target:** `loss_pct`, quarterly colonies lost ("deadout"), % of max colonies (NASS-published,
   integer-rounded). `loss_pct_constructed` is the continuous cross-check.
 - **Predictors:** six stressor prevalences (`str_varroa`, `str_pests_excl_varroa`, `str_disease`,
