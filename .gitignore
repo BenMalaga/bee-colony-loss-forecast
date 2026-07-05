@@ -27,6 +27,6 @@ venv/
 # OS / editor
 .DS_Store
 
-# Internal working docs — NEVER published
+# Internal working docs, NEVER published
 _internal/
 CLAUDE.md
