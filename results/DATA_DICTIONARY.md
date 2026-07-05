@@ -1,15 +1,15 @@
-# Released dataset: U.S. honey-bee colony loss & stressor panel (2015–2025)
+# Released dataset: U.S. honey-bee colony loss & stressor panel (2015-2025)
 
 **File:** `bee_colony_panel.csv`, one row per (state, year, quarter).
 **Source:** USDA NASS *Honey Bee Colonies* survey, via the Quick Stats 2.0 API (public domain,
 U.S. Government work). Built reproducibly by `src/fetch_nass.py` + `src/build_panel.py`.
-**Coverage:** 1776 rows, 46 reporting units (45 states + a NASS "Other States" aggregate, coded OT), 2015–2025. Quarters: JAN–MAR=1 … OCT–DEC=4.
+**Coverage:** 1776 rows, 46 reporting units (45 states + a NASS "Other States" aggregate, coded OT), 2015-2025. Quarters: JAN-MAR=1 ... OCT-DEC=4.
 
 ## Columns
 | column | unit | meaning |
 |---|---|---|
 | state_alpha | n/a | USPS state code |
-| year, quarter | n/a | calendar year; quarter 1–4 (the "… THRU …" reporting period) |
+| year, quarter | n/a | calendar year; quarter 1-4 (the "... THRU ..." reporting period) |
 | loss_pct | % of colonies | **target**: colonies lost ("deadout") that quarter (NASS-published, integer-rounded) |
 | loss_pct_constructed | % | continuous cross-check = 100 × loss_colonies / inv_max |
 | loss_colonies | colonies | colonies lost that quarter |

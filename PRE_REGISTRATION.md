@@ -19,7 +19,7 @@ with concurrent loss and fail to beat a trivial seasonal baseline?
 
 ## 2. Design (locked)
 
-- **Data:** USDA NASS "Honey Bee Colonies" survey, state × quarter, 2015–present, via Quick
+- **Data:** USDA NASS "Honey Bee Colonies" survey, state × quarter, 2015-present, via Quick
   Stats 2.0 API. Covariate stack (H3 only) from the public Insolia et al. 2022 dataset.
 - **Unit of analysis:** state × quarter.
 - **Target Y:** colony **loss percentage** in quarter *t*. Denominator definition is frozen
@@ -27,7 +27,7 @@ with concurrent loss and fail to beat a trivial seasonal baseline?
   the NASS-published fields; if NASS already publishes a loss-percent item, that published item
   is the target and the constructed one is a cross-check. (Record the exact NASS `short_desc`
   used once discovered, without inspecting the *values*.)
-- **Temporal split (primary):** train on quarters **through 2022**, hold out **2023–2025**.
+- **Temporal split (primary):** train on quarters **through 2022**, hold out **2023-2025**.
   No random splits anywhere. Secondary: expanding-window rolling-origin evaluation.
 - **Forecast horizon:** h = 1 quarter (primary); h ∈ {1, 2, 4} (secondary).
 - **Predictors:** **lagged only** for all forecasting models: stressor prevalences, loss,
@@ -72,7 +72,7 @@ is touched **once**, at the end.
 - The leading-vs-coincident decomposition (H2) even if H1 is a clean null.
 - Every dropped/suppressed state-quarter, logged and tabulated (no silent scope cuts).
 - A COVID-in / COVID-out sensitivity analysis.
-- Explicit engagement with Insolia 2022 (incl. Supp. Tables S10–S11), Calovi 2021, Underwood 2024.
+- Explicit engagement with Insolia 2022 (incl. Supp. Tables S10-S11), Calovi 2021, Underwood 2024.
 
 ## 8. Deviations
 
@@ -99,7 +99,7 @@ not a change to the analysis plan.
   `loss_pct = 100 * loss_colonies / inv_max` is validated against the published loss% above.
 - **Stressor predictors (% of colonies):** Varroa mites; pests excl. varroa (two NASS spellings
   unified into one column); disease; pesticides; other causes; unknown causes.
-- **Quarters:** `JAN THRU MAR / APR THRU JUN / JUL THRU SEP / OCT THRU DEC` → Q1–Q4.
+- **Quarters:** `JAN THRU MAR / APR THRU JUN / JUL THRU SEP / OCT THRU DEC` → Q1-Q4.
 
 ---
 

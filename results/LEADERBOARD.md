@@ -1,7 +1,7 @@
 # Colony-loss forecasting benchmark: leaderboard
 
 **Task.** Forecast next-quarter state-level honey-bee colony **loss %** (USDA NASS) out-of-sample.
-**Frozen split (pre-registered).** Train on quarters ≤ 2022; evaluate on the held-out 2023–2025
+**Frozen split (pre-registered).** Train on quarters ≤ 2022; evaluate on the held-out 2023-2025
 window (n=349 state-quarters, 45 states). No random splits. Predictors must be **lagged** (no
 same-quarter leakage). **Metric:** MASE = MAE / MAE(seasonal-naive); **< 1 beats the baseline.**
 Report a state-block bootstrap 95% CI.
