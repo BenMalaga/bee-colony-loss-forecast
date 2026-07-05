@@ -20,7 +20,7 @@ A reproducible state × quarter panel from the USDA NASS *Honey Bee Colonies* su
 
 - **Rows:** 1,776 (unit × year × quarter); **reporting units:** 46 (45 states + a NASS "Other States" aggregate, coded OT); **period:** 2015–2025 (quarters
   JAN–MAR=1 … OCT–DEC=4).
-- **Target:** `loss_pct` — quarterly colonies lost ("deadout"), % of max colonies (NASS-published,
+- **Target:** `loss_pct`, quarterly colonies lost ("deadout"), % of max colonies (NASS-published,
   integer-rounded). `loss_pct_constructed` is the continuous cross-check.
 - **Predictors:** six stressor prevalences (`str_varroa`, `str_pests_excl_varroa`, `str_disease`,
   `str_pesticides`, `str_other`, `str_unknown`), plus `inv_max`, `added_replaced`, `renovated*`.

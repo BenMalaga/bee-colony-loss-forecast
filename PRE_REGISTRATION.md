@@ -1,11 +1,11 @@
-# Pre-Registration — Bee Colony-Loss Forecasting Benchmark
+# Pre-Registration: Bee Colony-Loss Forecasting Benchmark
 
-**Status:** 🔒 DRAFT — must be reviewed, then **git-committed with a timestamp BEFORE any
-outcome (colony-loss) data is fetched or inspected.** Committing this file before peeking is
-what makes the out-of-sample / null claim credible rather than p-hacked (master brief §4).
+**Status:** Locked. This plan was reviewed, then git-committed with a timestamp BEFORE any
+outcome (colony-loss) data was fetched or inspected. Committing this file before peeking is
+what makes the out-of-sample / null claim credible rather than p-hacked.
 
 - Drafted: 2026-06-10
-- Locked: 2026-06-10 — committed before any outcome data was fetched (see `git log` for the commit hash + timestamp).
+- Locked: 2026-06-10, committed before any outcome data was fetched (see `git log` for the commit hash + timestamp).
 - Author: Ben Malaga
 - Repo: `bee-colony-loss-forecast`
 
@@ -30,7 +30,7 @@ with concurrent loss and fail to beat a trivial seasonal baseline?
 - **Temporal split (primary):** train on quarters **through 2022**, hold out **2023–2025**.
   No random splits anywhere. Secondary: expanding-window rolling-origin evaluation.
 - **Forecast horizon:** h = 1 quarter (primary); h ∈ {1, 2, 4} (secondary).
-- **Predictors:** **lagged only** for all forecasting models — stressor prevalences, loss,
+- **Predictors:** **lagged only** for all forecasting models: stressor prevalences, loss,
   inventory, added, renovated at t−1, t−2, t−4, plus quarter-of-year and state fixed effects.
   Concurrent (same-quarter) predictors are used **only** in the H2 contrast and are explicitly
   not a forecasting model.
@@ -88,7 +88,7 @@ and the affected analysis is relabeled **exploratory**.
 
 ---
 
-## Field mapping (recorded 2026-06-10, post-discovery — pre-authorized by §2; names only)
+## Field mapping (recorded 2026-06-10, post-discovery, pre-authorized by §2; names only)
 
 Discovered via NASS `get_param_values` (field NAMES only; no outcome values inspected).
 Operationalized in `src/build_panel.py`. This records the §2-anticipated exact identifiers; it is
@@ -112,7 +112,7 @@ conclusions.
   *best* lagged model. Corrected to use the best lagged model (gap 2.2%, was 5.4%). Still **NOT
   supported** (bar 20%).
 - **D2 (correction).** The §3 baseline #3 (per-state × quarter climatological mean) was omitted
-  from the first M3 run; now included (MASE 1.003 — ties seasonal-naive).
+  from the first M3 run; now included (MASE 1.003, ties seasonal-naive).
 - **D3 (transparency).** The eval set excludes 2 of 351 test rows lacking a seasonal-naive value
   (t-4 missing at the 2019 gap / series start); they are the low-loss tail (target mean 1.5 vs
   9.05). All methods are scored on the identical filtered set; effect on MASE is immaterial.
@@ -133,7 +133,7 @@ conclusions.
 
 ### Verified conclusion (M3 + audit)
 The pre-registered **headline null survives**: reported NASS stressor prevalence adds **no
-statistically detectable marginal out-of-sample value** for next-quarter colony loss — robust
+statistically detectable marginal out-of-sample value** for next-quarter colony loss, robust
 across model class (HGB, LassoCV), target definition (integer-published, continuous), and
 stressor subset; the sign of the tiny effect is not even consistent. **Scope/power caveat:** MDE
 ≈ 0.09 MASE under the pre-registered PRIMARY state-block bootstrap (≈0.06 period-block, ≈0.02 in the

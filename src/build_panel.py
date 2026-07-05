@@ -77,7 +77,7 @@ def to_panel(long: pd.DataFrame) -> pd.DataFrame:
     long["var"] = long["short_desc"].map(name)
     long["quarter"] = long["reference_period_desc"].map(QUARTER)
 
-    # honest logging -- no silent scope cuts (master brief §4)
+    # honest logging: no silent scope cuts
     unmapped = long.loc[long["var"].isna(), "short_desc"].value_counts()
     if len(unmapped):
         print("[log] short_descs not in mapping (excluded from panel):")
